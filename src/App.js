@@ -1,10 +1,8 @@
-import Jumbotron from './components/jumbotron/index.js'
+import {JumbotronContainer} from './container/jumbotron.js'
 
 function App() {
   return (
-    <div className="app">
-      <Jumbotron />
-    </div>
+    <JumbotronContainer/>
   );
 }
 
