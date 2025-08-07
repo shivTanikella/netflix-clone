@@ -1,5 +1,5 @@
-import {Jumbotron} from './components/jumbotron/index.js'
-import jumboData from './fixtures/jumbo';
+import {Jumbotron} from '../components/index.js'
+import jumboData from '../fixtures/jumbo.json';
 
 export function JumbotronContainer() {
   return (
@@ -17,6 +17,4 @@ export function JumbotronContainer() {
       ))}
     </Jumbotron.Container>
   );
-}
-
-export default App;
+};
