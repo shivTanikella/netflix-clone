@@ -4,7 +4,7 @@ import * as ROUTES from './constants/routes';
 import { Home, Browse, Signin, Signup } from './pages';
 import { RedirectIfAuth, RequireAuth } from './helpers/routes';
 
-import { auth } from './lib/firebase.prod';            // <-- your exported auth
+import { auth } from './lib/firebase.prod';
 import { onAuthStateChanged } from 'firebase/auth';
 
 function App() {
