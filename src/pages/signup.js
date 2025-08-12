@@ -24,7 +24,7 @@ export default function Signup() {
 
     try {
       const cred = await createUserWithEmailAndPassword(auth, emailAddress, password);
-      await updateProfile(cred.user, { displayName: firstName });
+      await updateProfile(cred.user, { displayName: firstName, photoURL:(Math.floor(Math.random() * 5)+1) });
       navigate(ROUTES.BROWSE);
     } catch (err) {
       setFirstName('');
